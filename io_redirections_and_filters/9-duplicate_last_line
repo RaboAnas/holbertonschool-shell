@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l test_0/10-no_more_js
+find . -tipe f -name "*.js" -exec rm -f {} +

@@ -1,2 +1,2 @@
 #!/bin/bash
-print('\n'.join(f"{chr(i)}{chr(j)}" for i in range(97, 123) for j in range(97, 123) if not (chr(i) == 'o' and chr(j) == 'o')))
+echo {a..z}{a..z} | grep -v oo

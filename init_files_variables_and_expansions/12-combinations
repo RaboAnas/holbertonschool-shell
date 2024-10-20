@@ -1,2 +1,2 @@
 #!/bin/bash
-for i in {a..z}; do for j in {a..z}; do [ "$i$j" != "oo" ] && echo "$i$j"; done; done
+print('\n'.join(f"{chr(i)}{chr(j)}" for i in range(97, 123) for j in range(97, 123) if not (chr(i) == 'o' and chr(j) == 'o')))
